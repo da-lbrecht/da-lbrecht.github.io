@@ -6,12 +6,10 @@ let darkmodetoggle = document.getElementById("DarkModeToggle");
 document.addEventListener("DOMContentLoaded", function() {
     /* initialize variable in sessionStorage */
   if (sessionStorage.lightMode === undefined) {
-      sessionStorage.lightMode = "dark";
+      sessionStorage.lightMode = "light";
   }
-  else {
-      /* on load set color mode to the one stored in sessionStorage */
-      document.documentElement.setAttribute("color-mode", sessionStorage.lightMode);
-  }
+  /* on load set color mode to the one stored in sessionStorage */
+  document.documentElement.setAttribute("color-mode", sessionStorage.lightMode);
 });
 
 
