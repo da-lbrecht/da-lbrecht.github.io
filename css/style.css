@@ -83,20 +83,19 @@ header{
 .navbar {
     width: 80%;
     background-color: var(--color-background);
-    overflow: auto;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Navigation links */
 .navbar a {
-    float: left;
-    padding: 12px;
+    padding: 12px 24px;
     color: var(--color-accent-2);
     text-decoration: none;
     font-size: 17px;
     font-weight: lighter;
-    width: 21.5%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
     text-align: center;
 }
 
@@ -329,16 +328,16 @@ a:hover{
     .navbar {
         width: 95%;
         background-color: var(--color-background);
-        overflow: auto;
+        display: flex;
+        justify-content: center;
     }
 
     .navbar a {
-        width: 25%;
         text-align: center;
         font-size: 10pt;
         font-weight: normal;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
     /* change order of picture and text by making row a flex item and reversing the column orders */
@@ -407,10 +406,9 @@ a:hover{
 
 @media all and (max-width: 900px) {
     .navbar a {
-        width: 25%;
         text-align: center;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 
